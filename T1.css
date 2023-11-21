@@ -63,7 +63,7 @@ ul li:not(:last-child) {
     top: 190%;
     opacity: 0;
     visibility: hidden;
-    background-color: rgba(243, 243, 243, 0.657);
+    background-color: rgba(243, 243, 243);
     margin: 0;
     padding: 0;
     position: absolute;
@@ -133,7 +133,7 @@ ul li:not(:last-child) {
 
 @media (min-width:767px){
     .links:hover .SectionList::before{
-        border-color: transparent transparent rgba(243, 243, 243, 0.657) transparent;
+        border-color: transparent transparent rgb(243, 243, 243) transparent;
     }
 .links:hover .icon span:nth-child(2),.clicked .icon span:nth-child(2){
     width: 98%;
@@ -146,7 +146,7 @@ ul li:not(:last-child) {
 }
 @media (max-width:767px){
     .clicked  .SectionList::before{
-    border-color: transparent transparent rgba(243, 243, 243, 0.657) transparent;
+    border-color: transparent transparent rgba(243, 243, 243) transparent;
     }
     .clicked .icon span:nth-child(2){
     width: 98%;
