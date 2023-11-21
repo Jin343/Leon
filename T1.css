@@ -83,10 +83,6 @@ ul li:not(:last-child) {
     border-color: transparent;
 }
 
-.clicked  .SectionList::before{
-    border-color: transparent transparent rgba(243, 243, 243, 0.657) transparent;
-}
-
 
 .header {
     padding: 0px;
@@ -134,15 +130,32 @@ ul li:not(:last-child) {
     transition: width 0.3s;
 }
 
+
+@media (min-width:767px){
+    .links:hover .SectionList::before{
+        border-color: transparent transparent rgba(243, 243, 243, 0.657) transparent;
+    }
 .links:hover .icon span:nth-child(2),.clicked .icon span:nth-child(2){
     width: 98%;
 }
 
-.links:hover .SectionList,.clicked .SectionList {
+.links:hover .SectionList{
     opacity: 1;
     visibility: visible;
 }
-
+}
+@media (max-width:767px){
+    .clicked  .SectionList::before{
+    border-color: transparent transparent rgba(243, 243, 243, 0.657) transparent;
+    }
+    .clicked .icon span:nth-child(2){
+    width: 98%;
+    }
+    .clicked .SectionList {
+    opacity: 1;
+    visibility: visible;
+    }
+}
 .landing {
     background-image: url("https://wallpaperaccess.com/full/3899617.jpg");
     background-position: center;
@@ -572,6 +585,7 @@ display: flex;
 }
 
 @media (max-width:767px) {
+
     .about-content .text {
         padding: 0;
     }
