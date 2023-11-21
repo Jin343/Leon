@@ -83,7 +83,6 @@ ul li:not(:last-child) {
     border-color: transparent;
 }
 
-.links:hover .SectionList::before,
 .clicked  .SectionList::before{
     border-color: transparent transparent rgba(243, 243, 243, 0.657) transparent;
 }
