@@ -107,7 +107,7 @@ ul li:not(:last-child) {
 }
 @media (max-width:1039px){
     .logo {
-        font-size: 30px;
+        font-size: 25px;
     }
 }
 .icon {
@@ -172,12 +172,8 @@ ul li:not(:last-child) {
 }
 @media (max-width:1039px){
     .landing{
-    height: 60vh;
+    height: 70vh;
     }}
-    @media (max-width:767px){
-        .landing{
-        height: 50vh;
-        }}
 .introText {
     height: 100%;
     display: flex;
